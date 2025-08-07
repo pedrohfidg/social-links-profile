@@ -20,3 +20,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* Card container */
+.social-card-container {
+  background-color: var(--gray-800);
+  width: 24rem;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+}
+
+/* Profile image */
+.social-profile-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block-end: 1.5rem;
+}
+
+.social-profile-img {
+  width: 5.5rem;
+  border-radius: 50%;
+}

@@ -67,3 +67,55 @@ h1 {
   letter-spacing: 0rem;
   color: greenyellow;
 }
+
+/* User bio */
+.user-bio {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 150%;
+  letter-spacing: 0rem;
+  color: var(--customWhite);
+}
+
+/* User links */
+.social-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-links li {
+  background-color: var(--gray-700);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 150%;
+  letter-spacing: 0rem;
+  color: var(--customWhite);
+  transition: 0.8s;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 150%;
+  letter-spacing: 0rem;
+  color: var(--customWhite);
+}
+
+.social-links li:hover {
+  background-color: greenyellow;
+  color: #1f1f1f;
+  cursor: url("../assets/images/handcursor.svg"), auto;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 375px) {
+  .social-card-container {
+    width: 20.438rem;
+  }
+}

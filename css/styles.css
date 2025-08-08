@@ -65,7 +65,7 @@ h1 {
   font-weight: bold;
   line-height: 150%;
   letter-spacing: 0rem;
-  color: greenyellow;
+  color: var(--customGreen);
 }
 
 /* User bio */
@@ -79,7 +79,6 @@ h1 {
 
 /* User links */
 .social-links {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -88,27 +87,27 @@ h1 {
 .social-links li {
   background-color: var(--gray-700);
   border-radius: 0.5rem;
-  padding: 0.75rem;
   text-align: center;
-  font-size: 0.875rem;
-  font-weight: bold;
-  line-height: 150%;
-  letter-spacing: 0rem;
-  color: var(--customWhite);
-  transition: 0.8s;
+  list-style: none;
 }
 
 .social-links a {
+  display: block;
+  padding: 0.75rem;
   text-decoration: none;
+  color: var(--customWhite);
   font-size: 0.875rem;
   font-weight: bold;
   line-height: 150%;
   letter-spacing: 0rem;
-  color: var(--customWhite);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .social-links li:hover {
-  background-color: greenyellow;
+  background-color: var(--customGreen);
+}
+
+.social-links li:hover a {
   color: #1f1f1f;
   cursor: url("../assets/images/handcursor.svg"), auto;
 }
@@ -117,5 +116,11 @@ h1 {
 @media screen and (max-width: 375px) {
   .social-card-container {
     width: 20.438rem;
+  }
+
+  .social-user-details p,
+  .user-bio,
+  .social-links li {
+    font-size: 0.745rem;
   }
 }
